@@ -1,10 +1,13 @@
 '''
-9. Crear una lista de diez diccionarios donde cada uno de ellos contenga lainformación de un developer
+9. Crear una lista de diez diccionarios donde cada uno de ellos contenga la información de un developer
+
 Nombre
 Edad
 Lenguajes manejados
 Años de experiencia
+
 Se debe imprimir la lista de todas las formas mencionadas a continuación.Cada una de ellas debe ser implementada con una función lambda distinta.
+
 Alfabéticamente por nombre
 Edad
 Años de experiencia en forma ascendente
@@ -21,3 +24,6 @@ lista = [{'Nombre':'Juan' , 'Edad':'23', 'Lenguajes manejados':'Java', 'Anios ex
         {'Nombre':'valentina' , 'Edad':'56', 'Lenguajes manejados':'HTML', 'Anios exp':'32'},
         {'Nombre':'Camila' , 'Edad':'43', 'Lenguajes manejados':'CSS', 'Anios exp':'23'},
         {'Nombre':'Jose' , 'Edad':'30', 'Lenguajes manejados':'VisualBasic', 'Anios exp':'4'}]
+
+
+
