@@ -24,31 +24,37 @@ from Vehiculo2 import *
 import time
 from random import *
 
+from datetime import datetime, timedelta
+from sys import stdout
+from time import sleep
+
+
 semaforo = [Camion(),Colectivo(),Motocicleta(),Automovil()]
-tiemposi = list()
-tiemposf = list()
 flag = True
+rnd = randint(3,7)
+print(rnd)
 
 print("Arranquen!!")
-i = 0
+
+tempo = timedelta(seconds = rnd)
 for movil in semaforo:
     movil.arrancar()
-    tiemposi[i] = time.time()
-    i+=1
 
-while(flag == True):
-    rnd = randint(1,1000)
-    if (180 <= rnd <= 535):
-        flag = False
 print(rnd)
-print("Frenen!!")
-i = 0
+
+while(str(tempo) != '0:00:00'):
+    stdout.write("\r%s"%tempo)
+    stdout.flush()
+    tempo = tempo - timedelta(seconds=1)
+    sleep(1)
+
+print("\nFrenen!!")
 for movil in semaforo:
     movil.frenar()
-    movil.tiempo_de_marcha(tiemposi[i], time.time())
-    print(movil.tiempo_marcha)
-    i+=1
+    movil.tiempo_de_marcha(rnd)
+    print(movil.presentacion()+": "+str(movil.tiempo_marcha))
 
+stdout.flush()
 
 
     
