@@ -23,5 +23,12 @@ class Vehiculo:
 
     def __eq__(self, other):
         return self.vel_max == other.vel_max
+
+    def __lt__(self, other):
+        return self.vel_max < other.vel_max
+
+    def __gt__(self, other):
+        return self.vel_max > other.vel_max
+
     def __str__(self):
         return "Marca: {}, Vel_max: {}, Km_rec: {}".format(self.marca,self.vel_max,self.km_rec)
