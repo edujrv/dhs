@@ -1,8 +1,5 @@
 class Vehiculo:
     #'''Esta clase define los atributos (marcas , velocidad maxima y km recorridos) de un auto'''
-    marca = None
-    vel_max = None
-    km_rec = None
 
     def __init__(self, marca):
          self.marca = marca
