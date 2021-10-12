@@ -1,0 +1,1 @@
+void restar(int numeros[10], int numeros2[10], int resultado[10]);
